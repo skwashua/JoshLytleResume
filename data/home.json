@@ -1,0 +1,51 @@
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "workHistory": [
+        {
+        "name": "Company Name",
+        "startDate": 1621404000,
+        "endDate": null,
+        "skills": [
+            {
+            "title": "Skill 1"
+            },
+            {
+            "title": "Skill 2"
+            },
+            {
+            "title": "Skill 4"
+            },
+            {
+            "title": "Skill 5"
+            }
+        ],
+        "jobDescription": "Job description"
+        },
+        {
+        "name": "Company Name",
+        "startDate": 1621404000,
+        "endDate": 1621404000,
+        "skills": [
+            {
+            "title": "Skill 1"
+            }
+        ],
+        "jobDescription": "Job description"
+        },
+        {
+        "name": "Company Name",
+        "startDate": 1621404000,
+        "endDate": 1621404000,
+        "skills": [
+            {
+            "title": "Skill 1"
+            },
+            {
+            "title": "Skill 3"
+            }
+        ],
+        "jobDescription": "Job description"
+        }
+    ]
+}
