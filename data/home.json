@@ -1,9 +1,12 @@
 {
     "firstName": "John",
     "lastName": "Doe",
+    "title": "Lead iOS Developer",
     "workHistory": [
         {
         "name": "Company Name",
+        "appIcon": "https://joshlytle.com/portfolio/Wisq.png",
+        "title": "Sr. Dev",
         "startDate": 1621404000,
         "endDate": null,
         "skills": [
@@ -24,6 +27,8 @@
         },
         {
         "name": "Company Name",
+        "appIcon": "https://joshlytle.com/portfolio/Wisq.png",
+        "title": "Sr. Dev",
         "startDate": 1621404000,
         "endDate": 1621404000,
         "skills": [
@@ -35,6 +40,8 @@
         },
         {
         "name": "Company Name",
+        "appIcon": "https://joshlytle.com/portfolio/Wisq.png",
+        "title": "Sr. Dev",
         "startDate": 1621404000,
         "endDate": 1621404000,
         "skills": [
