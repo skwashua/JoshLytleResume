@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034E274B2A2E73CE003DF5EE /* DateRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E274A2A2E73CE003DF5EE /* DateRangeView.swift */; };
 		0361281F2A199B7200B4C1B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361281E2A199B7200B4C1B7 /* Environment.swift */; };
+		036128212A1C006100B4C1B7 /* WorkHistorySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */; };
+		036128242A1C1F1600B4C1B7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036128232A1C1F1600B4C1B7 /* Date+Extension.swift */; };
 		0394D28B2A190E2D00096C8D /* JoshLytleResumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D28A2A190E2D00096C8D /* JoshLytleResumeApp.swift */; };
-		0394D28D2A190E2D00096C8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D28C2A190E2D00096C8D /* ContentView.swift */; };
 		0394D28F2A190E2E00096C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0394D28E2A190E2E00096C8D /* Assets.xcassets */; };
 		0394D2932A190E2E00096C8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0394D2922A190E2E00096C8D /* Preview Assets.xcassets */; };
 		0394D29C2A19231400096C8D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D29B2A19231400096C8D /* Person.swift */; };
@@ -23,10 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034E274A2A2E73CE003DF5EE /* DateRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeView.swift; sourceTree = "<group>"; };
 		0361281E2A199B7200B4C1B7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistorySummaryView.swift; sourceTree = "<group>"; };
+		036128232A1C1F1600B4C1B7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		0394D2872A190E2D00096C8D /* JoshLytleResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoshLytleResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0394D28A2A190E2D00096C8D /* JoshLytleResumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoshLytleResumeApp.swift; sourceTree = "<group>"; };
-		0394D28C2A190E2D00096C8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0394D28E2A190E2E00096C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0394D2902A190E2E00096C8D /* JoshLytleResume.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JoshLytleResume.entitlements; sourceTree = "<group>"; };
 		0394D2922A190E2E00096C8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036128222A1C1EFC00B4C1B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				036128232A1C1F1600B4C1B7 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0394D27E2A190E2D00096C8D = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0394D28A2A190E2D00096C8D /* JoshLytleResumeApp.swift */,
+				036128222A1C1EFC00B4C1B7 /* Extensions */,
 				0394D29F2A19515D00096C8D /* Service */,
 				0394D29A2A1920D100096C8D /* Models */,
 				0394D2992A1920BA00096C8D /* Views */,
@@ -92,11 +105,12 @@
 		0394D2992A1920BA00096C8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0394D28C2A190E2D00096C8D /* ContentView.swift */,
 				0394D2A02A19518200096C8D /* HomeScreen.swift */,
-				0394D2A22A19519C00096C8D /* WorkHistoryDetailScreen.swift */,
 				0394D2A42A1952B200096C8D /* HomeViewModel.swift */,
+				0394D2A22A19519C00096C8D /* WorkHistoryDetailScreen.swift */,
 				0394D2A62A1952CA00096C8D /* WorkHistoryViewModel.swift */,
+				036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */,
+				034E274A2A2E73CE003DF5EE /* DateRangeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,11 +206,13 @@
 			files = (
 				0394D2A32A19519C00096C8D /* WorkHistoryDetailScreen.swift in Sources */,
 				0394D29C2A19231400096C8D /* Person.swift in Sources */,
+				036128242A1C1F1600B4C1B7 /* Date+Extension.swift in Sources */,
 				0394D2A52A1952B200096C8D /* HomeViewModel.swift in Sources */,
+				034E274B2A2E73CE003DF5EE /* DateRangeView.swift in Sources */,
 				0394D2A12A19518200096C8D /* HomeScreen.swift in Sources */,
 				0394D2AB2A1955C400096C8D /* HomeService.swift in Sources */,
+				036128212A1C006100B4C1B7 /* WorkHistorySummaryView.swift in Sources */,
 				0394D29E2A19232500096C8D /* WorkHistory.swift in Sources */,
-				0394D28D2A190E2D00096C8D /* ContentView.swift in Sources */,
 				0361281F2A199B7200B4C1B7 /* Environment.swift in Sources */,
 				0394D2A72A1952CA00096C8D /* WorkHistoryViewModel.swift in Sources */,
 				0394D28B2A190E2D00096C8D /* JoshLytleResumeApp.swift in Sources */,

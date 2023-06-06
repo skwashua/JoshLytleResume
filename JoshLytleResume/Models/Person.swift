@@ -10,5 +10,6 @@ import Foundation
 class Person: Decodable {
     let firstName: String
     let lastName: String
+    var title: String?
     let workHistory: [WorkHistory]
 }

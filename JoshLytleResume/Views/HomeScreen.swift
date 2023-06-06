@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @StateObject var viewModel = HomeViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if let person = viewModel.person {
+                HStack() {
+                    Text(person.firstName)
+                    Text(person.lastName)
+                }
+                .font(.largeTitle)
+                
+                if let title = person.title {
+                    Text(title)
+                }
+                
+                Divider()
+                
+                ForEach(person.workHistory) { workHistory in
+                    WorkHistorySummaryView(workHistory: workHistory)
+                        .padding(.top)
+                }
+                
+                Spacer()
+                
+            } else {
+                ProgressView()
+                    .progressViewStyle(.circular)
+            }
+        }
+        .task {
+            viewModel.load()
+        }
     }
 }
 

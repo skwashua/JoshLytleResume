@@ -1,45 +1,175 @@
 {
-    "firstName": "John",
-    "lastName": "Doe",
+    "firstName": "Josh",
+    "lastName": "Lytle",
     "title": "Lead iOS Developer",
     "workHistory": [
         {
-        "name": "Company Name",
+        "name": "Wisq",
         "appIcon": "https://joshlytle.com/portfolio/appicons/Wisq.png",
         "title": "Sr. Dev",
-        "startDate": 1621404000,
-        "endDate": null,
+        "startDate": 1627776000,
+        "endDate": 1660953600,
         "skills": [
             {
-            "title": "Skill 1"
+            "title": "SwiftUI"
             },
             {
-            "title": "Skill 2"
+            "title": "Combine"
             },
             {
-            "title": "Skill 4"
+            "title": "Realm"
             },
             {
-            "title": "Skill 5"
+            "title": "MVVM"
+            },
+            {
+            "title": "WebRTC"
             }
         ],
-        "jobDescription": "Job description"
+        "jobDescription": "First iOS team hire. Worked on initial architecture, setting up continuous integration, automated testing (UI and Unit), and assisted in technical designs. Primary technologies included SwiftUI, Combine, and Realm.",
+        "portfolioImages": [
+            "http://joshlytle.com/portfolio/images/wisq1.webp",
+            "http://joshlytle.com/portfolio/images/wisq2.webp"
+            ]
         },
         {
-        "name": "Company Name",
-        "appIcon": "https://joshlytle.com/portfolio/appicons/Wisq.png",
+        "name": "ExpertVoice",
+        "appIcon": "https://joshlytle.com/portfolio/appicons/Experticity.png",
+        "title": "Mobile Architect",
+        "startDate": 1422748800,
+        "endDate": 1659312000,
+        "skills": [
+            {
+            "title": "UIKit"
+            },
+            {
+            "title": "SwiftUI"
+            },
+            {
+            "title": "GCD"
+            },
+            {
+            "title": "Realm"
+            },
+            {
+            "title": "MapKit"
+            },
+            {
+            "title": "WebKit"
+            },
+            {
+            "title": "MVC"
+            },
+            {
+            "title": "REST"
+            },
+            {
+            "title": "AVFoundation"
+            },
+            {
+            "title": "AutoLayout"
+            },
+            {
+            "title": "Storyboards"
+            },
+            {
+            "title": "Animations"
+            },
+            {
+            "title": "A/B Testing"
+            },
+            {
+            "title": "Firebase"
+            },
+            {
+            "title": "Git"
+            }
+        ],
+        "jobDescription": "As the initial hire for the Mobile team, I was responsible for rapid prototyping, architecture, and tight integration with Product and Design. Managed the team of 6 mobile devs and helped bring the app to over 150,000 monthly active users.",
+        "portfolioImages": [
+            "http://joshlytle.com/portfolio/images/ev1.png",
+            "http://joshlytle.com/portfolio/images/ev2.png"
+            ]
+        },
+        {
+        "name": "Advanced MD",
+        "appIcon": "https://joshlytle.com/portfolio/appicons/AdvancedMD.jpg",
+        "title": "Sr. Dev",
+        "startDate": 1391711881,
+        "endDate": 1423247881,
+        "skills": [
+            {
+            "title": "UIKit"
+            },
+            {
+            "title": "Swift"
+            },
+            {
+            "title": "Objective C"
+            },
+            {
+            "title": "MVC"
+            },
+            {
+            "title": "REST"
+            },
+            {
+            "title": "AutoLayout"
+            },
+            {
+            "title": "Storyboards"
+            },
+            {
+            "title": "Animations"
+            },
+            {
+            "title": "Git"
+            }
+        ],
+        "jobDescription": "Worked on a team of 4 iOS developers, primarily focused on an iPad application used by thousands of doctors around the country. Two new apps were written entirely in Swift.",
+        "portfolioImages": [
+            "http://joshlytle.com/portfolio/images/adp1.png"
+            ]
+        },
+        {
+        "name": "20th Century Fox",
+        "appIcon": "https://joshlytle.com/portfolio/appicons/Fox.png",
         "title": "Sr. Dev",
         "startDate": 1621404000,
         "endDate": 1621404000,
         "skills": [
             {
-            "title": "Skill 1"
+            "title": "UIKit"
+            },
+            {
+            "title": "Objective C"
+            },
+            {
+            "title": "MVC"
+            },
+            {
+            "title": "REST"
+            },
+            {
+            "title": "AutoLayout"
+            },
+            {
+            "title": "XIB"
+            },
+            {
+            "title": "Animations"
             }
         ],
-        "jobDescription": "Job description"
+        "jobDescription": "Job description",
+        "portfolioImages": [
+            "http://joshlytle.com/portfolio/images/ff1.png",
+            "http://joshlytle.com/portfolio/images/ff2.png",
+            "http://joshlytle.com/portfolio/images/fv1.jpeg",
+            "http://joshlytle.com/portfolio/images/fv2.png"
+            ]
         },
         {
-        "name": "Company Name",
+        "name": "Freelance",
         "appIcon": "https://joshlytle.com/portfolio/appicons/Wisq.png",
         "title": "Sr. Dev",
         "startDate": 1621404000,
@@ -52,7 +182,18 @@
             "title": "Skill 3"
             }
         ],
-        "jobDescription": "Job description"
+        "jobDescription": "Released more than 10 apps in various industries. Featured for my Not-a-Bar app on Fox 13 News./nClients include Run It Once, Rantt, Scotts Valley Fire District, LIFE, and more.",
+        "portfolioImages": [
+            "http://joshlytle.com/portfolio/images/nab1.jpeg",
+            "http://joshlytle.com/portfolio/images/rntl1.jpeg",
+            "http://joshlytle.com/portfolio/images/kiosk1.jpeg",
+            "http://joshlytle.com/portfolio/images/rantt1.jpeg",
+            "http://joshlytle.com/portfolio/images/roi2.png",
+            "http://joshlytle.com/portfolio/images/pin1.png",
+            "http://joshlytle.com/portfolio/images/evcol1.png",
+            "http://joshlytle.com/portfolio/images/mm2.png",
+            "http://joshlytle.com/portfolio/images/earlymath.png"
+            ]
         }
     ]
 }
