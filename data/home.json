@@ -160,7 +160,7 @@
             "title": "Animations"
             }
         ],
-        "jobDescription": "Job description",
+        "jobDescription": "Worked on two different Fox iOS apps, primarily used by internal employees, guild members, and business partners. Contract through PB Systems.",
         "portfolioImages": [
             "http://joshlytle.com/portfolio/images/ff1.png",
             "http://joshlytle.com/portfolio/images/ff2.png",
@@ -170,18 +170,8 @@
         },
         {
         "name": "Freelance",
-        "appIcon": "https://joshlytle.com/portfolio/appicons/Wisq.png",
-        "title": "Sr. Dev",
-        "startDate": 1621404000,
-        "endDate": 1621404000,
-        "skills": [
-            {
-            "title": "Skill 1"
-            },
-            {
-            "title": "Skill 3"
-            }
-        ],
+        "title": "App Developer",
+        "startDate": 1262373727,
         "jobDescription": "Released more than 10 apps in various industries. Featured for my Not-a-Bar app on Fox 13 News./nClients include Run It Once, Rantt, Scotts Valley Fire District, LIFE, and more.",
         "portfolioImages": [
             "http://joshlytle.com/portfolio/images/nab1.jpeg",
