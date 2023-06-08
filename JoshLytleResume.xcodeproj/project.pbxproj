@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		034E274B2A2E73CE003DF5EE /* DateRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E274A2A2E73CE003DF5EE /* DateRangeView.swift */; };
+		034E274D2A30DA4D003DF5EE /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E274C2A30DA4D003DF5EE /* URL+Extension.swift */; };
 		0361281F2A199B7200B4C1B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361281E2A199B7200B4C1B7 /* Environment.swift */; };
 		036128212A1C006100B4C1B7 /* WorkHistorySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */; };
 		036128242A1C1F1600B4C1B7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036128232A1C1F1600B4C1B7 /* Date+Extension.swift */; };
@@ -19,13 +20,14 @@
 		0394D2A12A19518200096C8D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D2A02A19518200096C8D /* HomeScreen.swift */; };
 		0394D2A32A19519C00096C8D /* WorkHistoryDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D2A22A19519C00096C8D /* WorkHistoryDetailScreen.swift */; };
 		0394D2A52A1952B200096C8D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D2A42A1952B200096C8D /* HomeViewModel.swift */; };
-		0394D2A72A1952CA00096C8D /* WorkHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D2A62A1952CA00096C8D /* WorkHistoryViewModel.swift */; };
 		0394D2A92A1955B900096C8D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D2A82A1955B900096C8D /* BaseService.swift */; };
 		0394D2AB2A1955C400096C8D /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D2AA2A1955C400096C8D /* HomeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		034E274A2A2E73CE003DF5EE /* DateRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeView.swift; sourceTree = "<group>"; };
+		034E274C2A30DA4D003DF5EE /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		034E274F2A31A286003DF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0361281E2A199B7200B4C1B7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistorySummaryView.swift; sourceTree = "<group>"; };
 		036128232A1C1F1600B4C1B7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -39,7 +41,6 @@
 		0394D2A02A19518200096C8D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		0394D2A22A19519C00096C8D /* WorkHistoryDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryDetailScreen.swift; sourceTree = "<group>"; };
 		0394D2A42A1952B200096C8D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		0394D2A62A1952CA00096C8D /* WorkHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryViewModel.swift; sourceTree = "<group>"; };
 		0394D2A82A1955B900096C8D /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		0394D2AA2A1955C400096C8D /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,10 +56,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034E274E2A3141B1003DF5EE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0394D2A02A19518200096C8D /* HomeScreen.swift */,
+				0394D2A22A19519C00096C8D /* WorkHistoryDetailScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		034E27502A31A9AE003DF5EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0394D2A42A1952B200096C8D /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		034E27512A31A9E3003DF5EE /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */,
+				034E274A2A2E73CE003DF5EE /* DateRangeView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
 		036128222A1C1EFC00B4C1B7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				036128232A1C1F1600B4C1B7 /* Date+Extension.swift */,
+				034E274C2A30DA4D003DF5EE /* URL+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -82,6 +110,7 @@
 		0394D2892A190E2D00096C8D /* JoshLytleResume */ = {
 			isa = PBXGroup;
 			children = (
+				034E274F2A31A286003DF5EE /* Info.plist */,
 				0394D28A2A190E2D00096C8D /* JoshLytleResumeApp.swift */,
 				036128222A1C1EFC00B4C1B7 /* Extensions */,
 				0394D29F2A19515D00096C8D /* Service */,
@@ -105,12 +134,9 @@
 		0394D2992A1920BA00096C8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0394D2A02A19518200096C8D /* HomeScreen.swift */,
-				0394D2A42A1952B200096C8D /* HomeViewModel.swift */,
-				0394D2A22A19519C00096C8D /* WorkHistoryDetailScreen.swift */,
-				0394D2A62A1952CA00096C8D /* WorkHistoryViewModel.swift */,
-				036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */,
-				034E274A2A2E73CE003DF5EE /* DateRangeView.swift */,
+				034E274E2A3141B1003DF5EE /* Screens */,
+				034E27502A31A9AE003DF5EE /* ViewModels */,
+				034E27512A31A9E3003DF5EE /* ReusableViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,9 +238,9 @@
 				0394D2A12A19518200096C8D /* HomeScreen.swift in Sources */,
 				0394D2AB2A1955C400096C8D /* HomeService.swift in Sources */,
 				036128212A1C006100B4C1B7 /* WorkHistorySummaryView.swift in Sources */,
+				034E274D2A30DA4D003DF5EE /* URL+Extension.swift in Sources */,
 				0394D29E2A19232500096C8D /* WorkHistory.swift in Sources */,
 				0361281F2A199B7200B4C1B7 /* Environment.swift in Sources */,
-				0394D2A72A1952CA00096C8D /* WorkHistoryViewModel.swift in Sources */,
 				0394D28B2A190E2D00096C8D /* JoshLytleResumeApp.swift in Sources */,
 				0394D2A92A1955B900096C8D /* BaseService.swift in Sources */,
 			);
@@ -345,6 +371,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JoshLytleResume/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -383,6 +410,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JoshLytleResume/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -10,6 +10,7 @@ import Combine
 
 class HomeViewModel: ObservableObject {
     @Published var person: Person?
+    
     var cancellables: Set<AnyCancellable> = []
     
     func load() {

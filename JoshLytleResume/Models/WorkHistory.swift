@@ -7,6 +7,16 @@
 
 import Foundation
 
+extension WorkHistory: Hashable {
+    static func == (lhs: WorkHistory, rhs: WorkHistory) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
 struct WorkHistory: Decodable, Identifiable {
     struct Skill: Decodable {
         var title: String
@@ -19,7 +29,7 @@ struct WorkHistory: Decodable, Identifiable {
     var skills: [Skill]?
     var jobDescription: String
     private let appIconValue: String?
-    private let portfolioImageValues: [String]?
+    let portfolioImageValues: [String]?
     
     var startDate: Date {
         return Date(timeIntervalSince1970: startDateValue)
