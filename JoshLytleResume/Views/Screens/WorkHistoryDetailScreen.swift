@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import ImageViewerRemote
 
 struct WorkHistoryDetailScreen: View {
     var workHistory: WorkHistory
+    
+    @State var showImageViewer: Bool = false
+    @State var selectedImage: String = ""
     
     var body: some View {
         GeometryReader { proxy in
@@ -49,12 +53,17 @@ struct WorkHistoryDetailScreen: View {
                         ScrollView(.horizontal) {
                             HStack(alignment: .top) {
                                 ForEach(images) { url in
-                                    AsyncImage(url: url) { image in
-                                        image.resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(height: 400.0)
-                                    } placeholder: {
-                                        ProgressView()
+                                    Button {
+                                        selectedImage = url.absoluteString
+                                        showImageViewer = true
+                                    } label: {
+                                        AsyncImage(url: url) { image in
+                                            image.resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(height: 400.0)
+                                        } placeholder: {
+                                            ProgressView()
+                                        }
                                     }
                                 }
                             }
@@ -65,6 +74,9 @@ struct WorkHistoryDetailScreen: View {
                     Spacer()
                 }
             }
+        }
+        .overlay {
+            ImageViewerRemote(imageURL: $selectedImage, viewerShown: $showImageViewer)
         }
     }
 }

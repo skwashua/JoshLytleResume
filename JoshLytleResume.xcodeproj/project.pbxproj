@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		034E274B2A2E73CE003DF5EE /* DateRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E274A2A2E73CE003DF5EE /* DateRangeView.swift */; };
 		034E274D2A30DA4D003DF5EE /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E274C2A30DA4D003DF5EE /* URL+Extension.swift */; };
+		034E27562A321E06003DF5EE /* ImageViewerRemote in Frameworks */ = {isa = PBXBuildFile; productRef = 034E27552A321E06003DF5EE /* ImageViewerRemote */; };
+		034E27592A322DBA003DF5EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034E27582A322DBA003DF5EE /* UIKit.framework */; platformFilter = ios; };
 		0361281F2A199B7200B4C1B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361281E2A199B7200B4C1B7 /* Environment.swift */; };
 		036128212A1C006100B4C1B7 /* WorkHistorySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */; };
 		036128242A1C1F1600B4C1B7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036128232A1C1F1600B4C1B7 /* Date+Extension.swift */; };
@@ -28,6 +30,7 @@
 		034E274A2A2E73CE003DF5EE /* DateRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeView.swift; sourceTree = "<group>"; };
 		034E274C2A30DA4D003DF5EE /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		034E274F2A31A286003DF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		034E27582A322DBA003DF5EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0361281E2A199B7200B4C1B7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		036128202A1C006100B4C1B7 /* WorkHistorySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistorySummaryView.swift; sourceTree = "<group>"; };
 		036128232A1C1F1600B4C1B7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -50,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034E27562A321E06003DF5EE /* ImageViewerRemote in Frameworks */,
+				034E27592A322DBA003DF5EE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,14 @@
 			path = ReusableViews;
 			sourceTree = "<group>";
 		};
+		034E27572A322DB9003DF5EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				034E27582A322DBA003DF5EE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		036128222A1C1EFC00B4C1B7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 			children = (
 				0394D2892A190E2D00096C8D /* JoshLytleResume */,
 				0394D2882A190E2D00096C8D /* Products */,
+				034E27572A322DB9003DF5EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +190,9 @@
 			dependencies = (
 			);
 			name = JoshLytleResume;
+			packageProductDependencies = (
+				034E27552A321E06003DF5EE /* ImageViewerRemote */,
+			);
 			productName = JoshLytleResume;
 			productReference = 0394D2872A190E2D00096C8D /* JoshLytleResume.app */;
 			productType = "com.apple.product-type.application";
@@ -204,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 0394D27E2A190E2D00096C8D;
+			packageReferences = (
+				034E27522A321E06003DF5EE /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */,
+			);
 			productRefGroup = 0394D2882A190E2D00096C8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,7 +410,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshlytle.resume.JoshLytleResume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,7 +451,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshlytle.resume.JoshLytleResume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +482,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		034E27522A321E06003DF5EE /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jake-Short/swiftui-image-viewer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		034E27552A321E06003DF5EE /* ImageViewerRemote */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 034E27522A321E06003DF5EE /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewerRemote;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0394D27F2A190E2D00096C8D /* Project object */;
 }
